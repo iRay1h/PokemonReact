@@ -1,7 +1,7 @@
 import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
 import { NavigationContainer } from "@react-navigation/native";
 import { createNativeStackNavigator } from "@react-navigation/native-stack";
-import { StyleSheet, Text } from "react-native";
+import { StyleSheet } from "react-native";
 import { colors } from "../styles/globalStyles";
 
 import DetailScreen from "../screens/DetailScreen";
@@ -113,7 +113,6 @@ const AppNavigator = () => {
           component={HomeStack}
           options={{
             tabBarLabel: "Explorar",
-            tabBarIcon: ({ color }) => <Text style={styles.iconText}>🔍</Text>,
           }}
         />
         <Tab.Screen
@@ -121,15 +120,12 @@ const AppNavigator = () => {
           component={FavoritesStack}
           options={{
             tabBarLabel: "Favoritos",
-            tabBarIcon: ({ color }) => <Text style={styles.iconText}>❤️</Text>,
           }}
         />
       </Tab.Navigator>
     </NavigationContainer>
   );
 };
-
-// Importar Text para los iconos
 
 export default AppNavigator;
 

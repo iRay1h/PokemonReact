@@ -246,7 +246,7 @@ const DetailScreen = ({ route }) => {
           onPress={toggleFavorite}
         >
           <Text style={globalStyles.buttonText}>
-            {isFavorite ? "❤️ Quitar de Favoritos" : "🤍 Agregar a Favoritos"}
+            {isFavorite ? "Quitar de Favoritos" : "Agregar a Favoritos"}
           </Text>
         </TouchableOpacity>
       </ScrollView>
