@@ -1,5 +1,10 @@
+import PhoneFrame from "./src/components/PhoneFrame";
 import AppNavigator from "./src/navigation/AppNavigator";
 
 export default function App() {
-  return <AppNavigator />;
+  return (
+    <PhoneFrame>
+      <AppNavigator />
+    </PhoneFrame>
+  );
 }
